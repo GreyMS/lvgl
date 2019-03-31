@@ -1,9 +1,8 @@
+/* clang-format off */
 
 #include "../lv_misc/lv_font.h"
 
-#if LV_USE_FONT_DEJAVU_10 != 0  /*Can be enabled in lv_conf.h*/
-
-/* clang-format off */
+#if LV_USE_FONT_DEJAVU_10 != 0 /*Can be enabled in lv_conf.h*/
 
 /***********************************************************************************
  * DejaVuSans.ttf 10 px Font in U+0020 ( ) .. U+007e (~)  range with 1 bpp

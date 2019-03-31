@@ -1,9 +1,8 @@
+/* clang-format off */
 
 #include "../lv_misc/lv_font.h"
 
 #if LV_USE_FONT_DEJAVU_30_LATIN_SUP != 0    /*Can be enabled in lv_conf.h*/
-
-/* clang-format off */
 
 /***********************************************************************************
  * DejaVuSans.ttf 30 px Font in U+00a0 ( ) .. U+00ff (ÿ)  range with 1 bpp

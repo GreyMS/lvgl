@@ -1,9 +1,8 @@
+/* clang-format off */
 
 #include "../lv_misc/lv_font.h"
 
 #if LV_USE_FONT_MONOSPACE_8 != 0    /*Can be enabled in lv_conf.h*/
-
-/* clang-format off */
 
 /***********************************************************************************
  * unscii_8_mod.ttf 8 px Font in U+0020 ( ) .. U+007e (~)  range with all bpp

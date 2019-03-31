@@ -67,7 +67,6 @@ void lv_font_builtin_init(void)
 #endif
 #endif
 
-
     /*DEJAVU 20*/
 #if LV_USE_FONT_DEJAVU_20 != 0
     lv_font_add(&lv_font_dejavu_20, NULL);
@@ -97,7 +96,6 @@ void lv_font_builtin_init(void)
     lv_font_add(&lv_font_symbol_20, NULL);
 #endif
 #endif
-
 
     /*DEJAVU 30*/
 #if LV_USE_FONT_DEJAVU_30 != 0

@@ -1,9 +1,8 @@
+/* clang-format off */
 
 #include "../lv_misc/lv_font.h"
 
 #if LV_USE_FONT_DEJAVU_40_CYRILLIC != 0 /*Can be enabled in lv_conf.h*/
-
-/* clang-format off */
 
 /***********************************************************************************
  * DejaVuSans.ttf 40 px Font in U+0410 (А) .. U+044f (я)  range with 1 bpp
