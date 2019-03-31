@@ -14,9 +14,8 @@
 #include "lv_hal_disp.h"
 
 #if defined(LV_GC_INCLUDE)
-#   include LV_GC_INCLUDE
+#include LV_GC_INCLUDE
 #endif /* LV_ENABLE_GC */
-
 
 /*********************
  *      DEFINES
@@ -66,7 +65,8 @@ lv_indev_t * lv_indev_drv_register(lv_indev_drv_t * driver)
     if(driver->disp == NULL) driver->disp = lv_disp_get_default();
 
     if(driver->disp == NULL) {
-        LV_LOG_WARN("lv_indev_drv_register: no display registered hence can't attache the indev to a display");
+        LV_LOG_WARN("lv_indev_drv_register: no display registered hence can't attache the indev to "
+                    "a display");
         return NULL;
     }
 
@@ -80,9 +80,9 @@ lv_indev_t * lv_indev_drv_register(lv_indev_drv_t * driver)
     memcpy(&node->driver, driver, sizeof(lv_indev_drv_t));
 
     node->proc.reset_query = 1;
-    node->cursor = NULL;
-    node->group = NULL;
-    node->btn_points = NULL;
+    node->cursor           = NULL;
+    node->group            = NULL;
+    node->btn_points       = NULL;
 
     return node;
 }
@@ -90,12 +90,15 @@ lv_indev_t * lv_indev_drv_register(lv_indev_drv_t * driver)
 /**
  * Get the next input device.
  * @param indev pointer to the current input device. NULL to initialize.
- * @return the next input devise or NULL if no more. Give the first input device when the parameter is NULL
+ * @return the next input devise or NULL if no more. Give the first input device when the parameter
+ * is NULL
  */
 lv_indev_t * lv_indev_next(lv_indev_t * indev)
 {
-    if(indev == NULL) return lv_ll_get_head(&LV_GC_ROOT(_lv_indev_ll));
-    else return lv_ll_get_next(&LV_GC_ROOT(_lv_indev_ll), indev);
+    if(indev == NULL)
+        return lv_ll_get_head(&LV_GC_ROOT(_lv_indev_ll));
+    else
+        return lv_ll_get_next(&LV_GC_ROOT(_lv_indev_ll), indev);
 }
 
 /**

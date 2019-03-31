@@ -36,10 +36,10 @@ void lv_indev_init(void);
 
 /**
  * Get the currently processed input device. Can be used in action functions too.
- * @return pointer to the currently processed input device or NULL if no input device processing right now
+ * @return pointer to the currently processed input device or NULL if no input device processing
+ * right now
  */
 lv_indev_t * lv_indev_get_act(void);
-
 
 /**
  * Get the type of an input device
@@ -72,7 +72,7 @@ void lv_indev_enable(lv_indev_t * indev, bool en);
  * @param indev pointer to an input device
  * @param cur_obj pointer to an object to be used as cursor
  */
-void lv_indev_set_cursor(lv_indev_t *indev, lv_obj_t *cur_obj);
+void lv_indev_set_cursor(lv_indev_t * indev, lv_obj_t * cur_obj);
 
 #if LV_USE_GROUP
 /**
@@ -80,7 +80,7 @@ void lv_indev_set_cursor(lv_indev_t *indev, lv_obj_t *cur_obj);
  * @param indev pointer to an input device
  * @param group point to a group
  */
-void lv_indev_set_group(lv_indev_t *indev, lv_group_t *group);
+void lv_indev_set_group(lv_indev_t * indev, lv_group_t * group);
 #endif
 
 /**
@@ -89,14 +89,14 @@ void lv_indev_set_group(lv_indev_t *indev, lv_group_t *group);
  * @param indev pointer to an input device
  * @param group point to a group
  */
-void lv_indev_set_button_points(lv_indev_t *indev, const lv_point_t *points);
+void lv_indev_set_button_points(lv_indev_t * indev, const lv_point_t * points);
 
 /**
  * Set feedback callback for indev.
  * @param indev pointer to an input device
  * @param feedback feedback callback
  */
-void lv_indev_set_feedback(lv_indev_t *indev, lv_indev_feedback_t feedback);
+void lv_indev_set_feedback(lv_indev_t * indev, lv_indev_feedback_t feedback);
 
 /**
  * Get the last point of an input device (for LV_INDEV_TYPE_POINTER and LV_INDEV_TYPE_BUTTON)
@@ -113,14 +113,16 @@ void lv_indev_get_point(const lv_indev_t * indev, lv_point_t * point);
 uint32_t lv_indev_get_key(const lv_indev_t * indev);
 
 /**
- * Check if there is dragging with an input device or not (for LV_INDEV_TYPE_POINTER and LV_INDEV_TYPE_BUTTON)
+ * Check if there is dragging with an input device or not (for LV_INDEV_TYPE_POINTER and
+ * LV_INDEV_TYPE_BUTTON)
  * @param indev pointer to an input device
  * @return true: drag is in progress
  */
 bool lv_indev_is_dragging(const lv_indev_t * indev);
 
 /**
- * Get the vector of dragging of an input device (for LV_INDEV_TYPE_POINTER and LV_INDEV_TYPE_BUTTON)
+ * Get the vector of dragging of an input device (for LV_INDEV_TYPE_POINTER and
+ * LV_INDEV_TYPE_BUTTON)
  * @param indev pointer to an input device
  * @param point pointer to a point to store the vector
  */
@@ -137,7 +139,7 @@ uint32_t lv_indev_get_inactive_time(const lv_indev_t * indev);
  * @param indev pointer to an input device
  * @return feedback callback
  */
-lv_indev_feedback_t lv_indev_get_feedback(const lv_indev_t *indev);
+lv_indev_feedback_t lv_indev_get_feedback(const lv_indev_t * indev);
 
 /**
  * Do nothing until the next release
@@ -149,9 +151,8 @@ void lv_indev_wait_release(lv_indev_t * indev);
  *      MACROS
  **********************/
 
-
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
 
-#endif  /*LV_INDEV_H*/
+#endif /*LV_INDEV_H*/
