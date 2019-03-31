@@ -3,6 +3,8 @@
 
 #if LV_USE_FONT_SYMBOL_40 != 0  /*Can be enabled in lv_conf.h*/
 
+/* clang-format off */
+
 /***********************************************************************************
  * fontawesome-webfont.ttf 40 px Font in U+f000 () .. U+f2ee ()  range with 1 bpp
  * Sparse font with only these characters:     
