@@ -3643,3 +3643,5 @@ lv_font_t lv_font_dejavu_10_cyrillic = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_10_CYRILLIC*/
+
+/* clang-format on */

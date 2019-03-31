@@ -16955,3 +16955,5 @@ lv_font_t lv_font_dejavu_40_latin_sup = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_40_LATIN_SUP*/
+
+/* clang-format on */

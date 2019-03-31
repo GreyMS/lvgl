@@ -2860,3 +2860,5 @@ lv_font_t lv_font_symbol_10 = {
 };
 
 #endif /*LV_USE_FONT_SYMBOL_10*/
+
+/* clang-format on */

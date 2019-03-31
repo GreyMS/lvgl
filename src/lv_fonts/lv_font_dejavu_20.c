@@ -9179,3 +9179,5 @@ lv_font_t lv_font_dejavu_20 = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_20*/
+
+/* clang-format on */

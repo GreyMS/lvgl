@@ -13115,3 +13115,5 @@ lv_font_t lv_font_dejavu_30_latin_sup = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_30_LATIN_SUP*/
+
+/* clang-format on */

@@ -12979,3 +12979,5 @@ lv_font_t lv_font_dejavu_30 = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_30*/
+
+/* clang-format on */

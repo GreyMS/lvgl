@@ -4860,3 +4860,5 @@ lv_font_t lv_font_symbol_20 = {
 };
 
 #endif /*LV_USE_FONT_SYMBOL_20*/
+
+/* clang-format on */

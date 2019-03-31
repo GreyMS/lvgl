@@ -4618,3 +4618,5 @@ lv_font_t lv_font_monospace_8 = {
 };
 
 #endif /*LV_USE_FONT_MONOSPACE_8*/
+
+/* clang-format on */

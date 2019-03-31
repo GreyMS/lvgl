@@ -8763,3 +8763,5 @@ lv_font_t lv_font_dejavu_30_cyrillic = {
 };
 
 #endif /*LV_USE_FONT_DEJAVU_30_CYRILLIC*/
+
+/* clang-format on */

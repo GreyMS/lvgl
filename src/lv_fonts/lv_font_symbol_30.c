@@ -6859,3 +6859,5 @@ lv_font_t lv_font_symbol_30 = {
 };
 
 #endif /*LV_USE_FONT_SYMBOL_30*/
+
+/* clang-format on */

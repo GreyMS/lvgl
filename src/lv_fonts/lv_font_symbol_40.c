@@ -8860,3 +8860,5 @@ lv_font_t lv_font_symbol_40 = {
 };
 
 #endif /*LV_USE_FONT_SYMBOL_40*/
+
+/* clang-format on */
