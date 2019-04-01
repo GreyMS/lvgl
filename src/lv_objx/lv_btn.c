@@ -129,8 +129,9 @@ lv_obj_t * lv_btn_create(lv_obj_t * par, const lv_obj_t * copy)
     /*Copy 'copy'*/
     else {
         lv_btn_ext_t * copy_ext = lv_obj_get_ext_attr(copy);
-        ext->state              = copy_ext->state;
-        ext->toggle             = copy_ext->toggle;
+
+        ext->state  = copy_ext->state;
+        ext->toggle = copy_ext->toggle;
 #if LV_USE_ANIMATION && LV_BTN_INK_EFFECT
         ext->ink_in_time   = copy_ext->ink_in_time;
         ext->ink_wait_time = copy_ext->ink_wait_time;
